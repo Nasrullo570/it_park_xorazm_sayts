@@ -1,8 +1,7 @@
 const delay = 3000; //ms
 const slides = document.querySelector(".slides");
-const slidesa = document.querySelector(".slidesa");
 const slidesCount = slides.childElementCount;
-const maxLeft = (slidesCount - 1) * 100 * -1;
+const maxLeft = (slidesCount - 1) * 100 * -1; 
 
 let current = 0;
 
