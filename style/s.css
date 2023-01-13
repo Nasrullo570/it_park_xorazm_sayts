@@ -46,7 +46,6 @@ body {
 .number a {
   display: flex;
   align-items: center;
-
 }
 
 .number a {
@@ -125,12 +124,10 @@ body {
   overflow: hidden;
   position: relative;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-
 }
 
 .carousel:hover .controls {
   opacity: 1;
-
 }
 
 .controls {
@@ -143,7 +140,6 @@ body {
   width: 100%;
   z-index: 99999;
   transition: all ease 0.5s;
-
 }
 
 .control {
@@ -155,16 +151,13 @@ body {
   width: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.7);
-  opacity: .5;
-  transition: ease .3s;
+  opacity: 0.5;
+  transition: ease 0.3s;
   cursor: pointer;
-
-
 }
 
 .control:hover {
   opacity: 1;
-
 }
 
 .slides {
@@ -175,7 +168,6 @@ body {
   display: flex;
   width: 100%;
   transition: 1s ease-in-out all;
-
 }
 
 .slide {
@@ -183,10 +175,6 @@ body {
   min-height: 250px;
   height: auto;
 }
-
-
-
-
 
 .box2 .card img {
   width: 100%;
@@ -447,9 +435,6 @@ body {
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-between;
-
-
-
 }
 
 .txt h1 {
@@ -459,11 +444,8 @@ body {
   display: flex;
   align-items: flex-end;
 
-
   color: #555351;
-
 }
-
 
 .cardd img {
   width: 100%;
@@ -473,8 +455,6 @@ body {
 .cardd {
   width: 40%;
   height: 100%;
-
-
 }
 
 .karta {
@@ -485,10 +465,7 @@ body {
 .karta_img img {
   border-radius: 100px;
   width: 100%;
-
 }
-
-
 
 .Name {
   display: flex;
@@ -497,7 +474,7 @@ body {
   width: 100%;
   height: 500px;
   margin-top: 150px;
-  background: #F2F3F7;
+  background: #f2f3f7;
   border-radius: 100px;
   position: relative;
   padding: 56px;
@@ -508,7 +485,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-
 }
 
 .logos {
@@ -532,7 +508,6 @@ body {
 .Name_rightss {
   max-width: 416px;
   width: 100%;
-
 }
 
 .name_title h2 {
@@ -540,30 +515,27 @@ body {
   font-size: 39px;
   line-height: 53px;
 
-  color: #1C1917;
+  color: #1c1917;
 }
 
 .name_title p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #8D8C8B;
-
+  color: #8d8c8b;
 }
 
 .name_title form {
   display: flex;
   flex-direction: column;
-
-
 }
 
 .name_title .ism,
 .numbers {
   margin: 10px 0;
   padding: 20px 5px 20px 23px;
-  background: #FAFAFD;
-  border: 0.5px solid #C6C5C5;
+  background: #fafafd;
+  border: 0.5px solid #c6c5c5;
   border-radius: 100px;
   font-weight: 400;
   font-size: 16px;
@@ -573,7 +545,7 @@ body {
 
 .name_title button {
   margin-top: 10px;
-  background: #C0E444;
+  background: #c0e444;
   border-radius: 100px;
   padding: 18px 36px;
   border: 0;
@@ -586,12 +558,12 @@ body {
   font-size: 16px;
   line-height: 22px;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 footer {
   margin-top: -200px;
-  background: #C0E444;
+  background: #c0e444;
   border-radius: 100px 100px 0px 0px;
   width: 100%;
 }
@@ -599,7 +571,6 @@ footer {
 .footer {
   width: 100%;
   height: 500px;
-
 }
 
 .footer_logo {
@@ -611,12 +582,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
 }
 
 .footer_boxs {
   margin-top: 240px;
-
 }
 
 .icns {
@@ -639,10 +608,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-
-
-
-
 }
 
 .footer_boxs p {
@@ -650,10 +615,7 @@ footer {
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
-  color: #FFFFFF;
-
-
-
+  color: #ffffff;
 }
 
 .footer_boxs2,
@@ -661,7 +623,7 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer_boxs {
@@ -676,7 +638,7 @@ footer {
   width: 100%;
   margin: 40px auto;
 
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
 }
 
 .footer_end {

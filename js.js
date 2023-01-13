@@ -5,7 +5,7 @@ const maxLeft = (slidesCount - 1) * 100 * -1;
 
 let current = 0;
 
-function changeSlide(next = true) {
+function changeSlide(next = true) { 
   if (next) {
     current += current > maxLeft ? -100 : current * -1;
   } else {
