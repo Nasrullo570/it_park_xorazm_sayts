@@ -4,6 +4,7 @@
     --link: #555351;
     --title: #1C1917;
     --white: #fff;
+    --gr:#C0E444;
 }
 
 * {
@@ -69,6 +70,11 @@ ul {
 .header__nav-tel i {
     margin-right: 10px;
 }
+.header__content .container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
 
 
 /* ====================================== Main start ================================ */
@@ -81,6 +87,12 @@ ul {
     color: var(--title);
     margin-bottom: 48px;
     font-weight: 600;
+    margin-top: 100px;
+}
+.advantages__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .advantages__card {
@@ -102,4 +114,42 @@ ul {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+
+
+/*--------------------------------------    course    ---------------------------*/
+.course{
+    margin-top: 100px;
+}
+.course .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.course_title{
+
+}
+.course_content{
+    max-width: 790px;
+    width: 100%;
+    height: 560px;
+    border-radius: 100px;
+    padding: 56px;
+    background: var(--gr);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.course_content img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.course_content a{
+    margin-top: auto;
 }
