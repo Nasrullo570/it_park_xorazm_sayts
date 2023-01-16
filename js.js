@@ -27,7 +27,7 @@ const restart1 = function() {
 };
 
 // Controls
-document.querySelector(".next-slide").addEventListener("click", function() {
+document.querySelector(".next-slide").addEventListener("click", function() { 
   changeSlide();
   restart();
 });
