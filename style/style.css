@@ -135,9 +135,7 @@ button {
 }
 
 .header__content-image img {
-    max-width: 584px;
     width: 100%;
-    height: 338px;
 }
 
 .header__content-image-bottom {
@@ -516,7 +514,7 @@ button {
     width: 100%;
     border-radius: 100px 100px 0 0;
     background: var(--gr);
-    height: 426px;
+    min-height: 426px;
 
 }
 
@@ -593,10 +591,17 @@ button {
     color: #FFFFFF;
 }
 
+/* @media(min-width: 1399.7px) {
+    .container{
+    max-width: 1320px;
+    width: 100%;
+    }
+} */
 
 
 
-@media(max-width: 992px) {
+
+@media(max-width: 991.8px) {
     .header__nav-tel {
         display: none;
     }
@@ -653,4 +658,5 @@ button {
 
 }
 
-@media (max-width: 768px) {}
+/* @media (max-width: 768px) {}
+@media (max-width: 576px) {} */
