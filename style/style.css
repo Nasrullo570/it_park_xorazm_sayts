@@ -128,7 +128,7 @@ button{
 }
 .course .container{
     display: flex;
-    align-items: center;
+    align-items: flex-start ;
     justify-content: space-between;
     
 
@@ -136,7 +136,7 @@ button{
 .course_title{
 
 }
-.course_content{
+.course_content_box{
     max-width: 790px;
     width: 100%;
     height: 560px;
@@ -147,6 +147,7 @@ button{
     display: flex;
     flex-direction: column;
     position: relative;
+    margin-top: 10px;
 
 }
 .course_content img{
@@ -154,8 +155,9 @@ button{
     bottom: 0;
     right: 0;
 }
-.course_content a{
+.course_content_box a{
     margin-top: auto;
+  
 }
 .course_title{
     display: flex;align-items: flex-start;justify-content: space-between;flex-direction: column;
@@ -215,5 +217,123 @@ width: 100%;
 }
 .course_content a i{
     margin-left: 10px ;
+
+}
+
+
+/*---------------------------------   swiper    -------------------------------*/
+
+.swiper{
+    margin-top: 100px;
+}
+
+
+
+
+
+
+/* ------------------------------------   certificate  ---------------- */
+
+
+.certificate .container h4{
+    margin-top: 96px;
+    font-weight: 600;
+font-size: 49px;
+line-height: 67px;
+display: flex;
+align-items: flex-end;
+color: #1C1917;
+}
+
+.certificate_box{
+    margin-top: 48px;
+    background: #F2F3F7;
+    border-radius: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 56px;
+    height: 336px;
+
+}
+.certificate_box h3{
+    font-weight: 600;
+font-size: 31px;
+line-height: 42px;
+display: flex;
+align-items: flex-end;
+color: #555351;
+}
+.certificate_box a{
+    background: #1C1917;
+border-radius: 100px;
+padding: 24px 32px;
+color: white;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+
+}
+.certificate_content_title{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 583px;
+    height: 220px;
+    
+}
+.certificate_box a i{
+    margin-left: 16px;
+}
+.certificate_content_card{
+    border-radius: 100px;
+    height: 224px;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------karta----------------------------------*/
+.karta{
+    margin-top: 100px;
+}
+.karta img{
+    border-radius: 100px;
+    
+
+}
+
+
+
+/*--------------------------------footer---------------------------------*/
+footer .container{
+    margin-top: 100px;
+    height: 491px;
+    background: #F2F3F7;;
+    border-radius: 100px;
+    padding: 52px;
+
+}
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.footer_content img{
+    position: absolute;
+    top: 39px;
+    left: 0;
+}
+.footer-icon{
+    border-radius: 100px 100px 0 0;
+    background: var(--gr);
+    height: 300px;
 
 }
