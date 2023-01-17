@@ -25,12 +25,19 @@ a {
 ul {
     list-style: none;
 }
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 button{
     cursor: pointer;
 }
 
+
 .container {
-    width: 1230px;
+    max-width: 1230px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -56,8 +63,8 @@ button{
 .header__link {
     font-size: 20px;
     color: var(--link);
-    padding: 15px 20px;
-    margin: 0 20px;
+    padding: 15px 15px;
+    margin: 0 10px;
     transition: .5s;
 }
 .header__link:hover {
@@ -78,6 +85,62 @@ button{
     display: flex;
     justify-content: space-between; 
     align-items: center;
+}
+.header__title{
+    font-weight: 600;
+font-size: 61px;
+line-height: 83px;
+display: flex;
+align-items: flex-end;
+
+color: #1C1917;
+}
+.header__txt{
+    font-weight: 400;
+font-size: 25px;
+line-height: 34px;
+display: flex;
+align-items: flex-end;
+color: #8D8C8B;
+
+}
+.header__content_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+    margin-top: 50px;
+    background: #1C1917;
+border-radius: 100px;
+width: 237px;
+height: 75px;
+}
+.header__content_link i{
+    margin-left: 15px;
+}
+.header__content-image{
+    width: 100%;
+}
+.header__content-image img{
+    max-width: 584px;
+    width: 100%;
+    height: 338px;
+}
+.header__content-image-bottom {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+.header__content-image-bottom span{
+    background: #F2F3F7;
+border-radius: 100px;
+padding: 16px 32px;
+cursor: pointer;
+
 }
 
 
@@ -100,7 +163,7 @@ button{
 }
 
 .advantages__card {
-    max-width: 379px;
+    max-width: 321px;
     width: 100%;
     border-radius: 100px;
     background: #F2F3F7;
@@ -224,8 +287,13 @@ width: 100%;
 /*---------------------------------   swiper    -------------------------------*/
 
 .swiper{
+    width: 100%;
     margin-top: 100px;
 }
+.swiper img{
+    width: 100%;
+}
+
 
 
 
@@ -306,6 +374,7 @@ line-height: 27px;
 }
 .karta img{
     border-radius: 100px;
+    width: 100%;
     
 
 }
@@ -313,27 +382,128 @@ line-height: 27px;
 
 
 /*--------------------------------footer---------------------------------*/
-footer .container{
+.footer_top .container{
     margin-top: 100px;
     height: 491px;
     background: #F2F3F7;;
     border-radius: 100px;
     padding: 52px;
+    position: relative;
+    margin-bottom:  -140px;
+
 
 }
 .footer_content{
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 .footer_content img{
     position: absolute;
-    top: 39px;
+    top: 91px;
     left: 0;
 }
 .footer-icon{
+    width: 100%;
     border-radius: 100px 100px 0 0;
     background: var(--gr);
-    height: 300px;
+    height: 426px;
+
+}
+.footer-icon .container{
+    padding-top: 200px;
+    
+}
+
+
+.footer-icon_top {
+    display: flex;
+    color:var(--white);
+
+}
+.apps{
+    width: 70%;
+}
+.socials a{
+    width: 36px;
+    height: 36px;
+    background: var(--white);
+    color: var(--gr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+} 
+.socials a:hover{
+    opacity: .5;
+}
+.footer-icon_top h3{
+    font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+margin-bottom: 10px;
+}
+.footer-icon_top p {
+    font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+}
+.footer_numbers{
+    font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+margin-top: 10px;
+display: block;
+}
+
+.footer-icon_line{
+    width: 100%;
+    margin-top: 50px;
+    border-bottom: 1px solid white;
+}
+.footer-icon_end{
+    margin-top: 10px;
+}
+.footer-icon_end p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+
+color: #FFFFFF;
+}
+
+
+
+
+
+
+@media(max-width:  992px){
+    .header__nav-tel{
+        display: none;
+    }
+    .header__content .container{
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .header__content-image{
+        margin-top: 50px;
+    }
+    .advantages__cards{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        grid-template: 20px;
+    }
+    .course .container{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+   
 
 }
