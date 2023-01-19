@@ -67,7 +67,7 @@ button {
     color: var(--link);
     padding: 15px 15px;
     margin: 0 10px;
-    transition: .5s;
+    transition: .6s;
 }
 
 .header__link:hover {
@@ -133,7 +133,12 @@ button {
 .header__content-image {
     width: 100%;
 }
-
+.header__content_link:hover{
+    transition: .6s;
+    background: #FFFFFF;
+    border: 1px solid #555351;
+    color: #555351;
+}
 .header__content-image img {
     width: 100%;
 }
@@ -269,6 +274,10 @@ color: #1C1917;
     overflow: hidden;
 
 }
+.course_content_box a:hover{
+    color: #555351;
+    background-color: #F9F9FB;
+}
 
 .course_content img {
     position: absolute;
@@ -368,7 +377,7 @@ color: #1C1917;
 }
 
 
-/*---------------------------------   swiper    -------------------------------*/
+/*-------------------------------------   swiper   ----------------------------------*/
 
 .swiper {
     width: 100%;
@@ -418,7 +427,14 @@ color: #1C1917;
     align-items: flex-end;
     color: #555351;
 }
+.certificate_content_title a:hover{
+    background: #FFFFFF;
+border: 1px solid #555351;
+transition: .6s;
 
+color: #555351;
+
+}
 .certificate_box a {
     background: #1C1917;
     border-radius: 100px;
@@ -427,6 +443,7 @@ color: #1C1917;
     font-weight: 600;
     font-size: 20px;
     line-height: 27px;
+    border: 1px solid #555351;
 }
 .certificate_content_title p{
     font-weight: 400;
@@ -873,9 +890,7 @@ color: white;
         padding: 24px;
 
     }
-    .verification_content_left{
-    }
-
+    
 }
 
  @media (max-width: 768px) {
