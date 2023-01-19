@@ -68,6 +68,8 @@ button {
     padding: 15px 15px;
     margin: 0 10px;
     transition: .6s;
+    display: block;
+    width: max-content;
 }
 
 .header__link:hover {
@@ -80,6 +82,56 @@ button {
     color: var(--link);
     font-size: 20px;
 }
+
+.nav__menu {
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.close {
+    display: none;
+}
+
+.nav__menu .line {
+    height: 2px;
+    width: 100%;
+    background: #C0E444;
+    position: absolute;
+    width: 30px;
+    transition: .5s;
+}
+
+.nav__menu .line:nth-of-type(1) {
+    transform: translateY(15px);
+    width: 20px;
+}
+.nav__menu .line:nth-of-type(3) {
+    transform: translateY(-15px);
+    width: 40px;
+}
+
+.nav__menu.active .line:nth-of-type(1) {
+    transform: translateY(0) rotate(-225deg);
+    width: 40px;
+    transition-delay: .25s;
+}
+.nav__menu.active .line:nth-of-type(3) {
+    transform: translateY(0) rotate(225deg);
+    transition-delay: .45s;
+}
+.nav__menu.active .line:nth-of-type(2) {
+    transform: translateX(200%);
+}
+
+.nav
 
 .header__nav-tel i {
     margin-right: 10px;
@@ -912,7 +964,50 @@ button {
     }
 
     .header__list {
-        display: none;
+        display: block;
+        position: fixed;
+        width: 100%;
+        background: rgb(255, 255, 255);
+        left: -100%;
+        top: 0;
+        bottom: 0;
+        z-index: 11;
+        margin-top: 20px;
+        transition: 500ms;
+        transition-delay: .8s;
+    }
+
+    .header__list.active {
+        left: 0;
+    }
+
+    .nav__menu {
+        display: flex;
+    }
+
+    .close.active .header__list {
+        left: -100%;
+    }
+
+    .nav__menu.active .header__list {
+        transform: translateX(0%);
+
+    }
+
+    .header__link {
+        margin-bottom: 24px;
+    }
+
+    .close {
+        display: block;
+        position: absolute;
+        top: 13px;
+        right: 13px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border: none;
+        font-size: 25px;
     }
 
     .header__content .container {

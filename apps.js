@@ -32,3 +32,19 @@ document.querySelector(".prev-slide").addEventListener("click", function() {
   changeSlide(false);
   restart();
 });
+
+/* ----------- */
+let navMenu = document.querySelector('.nav__menu');
+let headerList = document.querySelector('.header__list');
+let closeBtn = document.querySelector('#close');
+
+
+navMenu.addEventListener('click', () => {
+  navMenu.classList.toggle('active')
+  headerList.classList.toggle('active')
+})
+
+closeBtn.addEventListener('click', () => {
+  headerList.classList.toggle('active')
+  navMenu.classList.remove('active')
+})
