@@ -59,22 +59,23 @@ button {
 }
 
 .header__list {
+    align-items: center;
+    justify-content: space-between;
     display: flex;
 }
 
 .header__lin {
     font-size: 20px;
     color: var(--link);
-    padding: 15px 15px;
     transition: .6s;
     display: block;
     width: max-content;
-    margin-left: 50px;
+    margin-left: 50px   !important;
 }
 .header__link {
     font-size: 20px;
     color: var(--link);
-    padding: 15px 15px;
+    padding: 15px ;
     transition: .6s;
     margin:0 4px;
     display: block;
@@ -150,6 +151,9 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.header__content .container{
+    margin-top: 100px;
 }
 
 .header__title {
@@ -927,6 +931,51 @@ button {
 
 
 
+
+/*-----------------------------------------carousel------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*===================================================end========================================*/
 
 
@@ -981,7 +1030,6 @@ button {
         top: 0;
         bottom: 0;
         z-index: 11;
-        margin-top: 20px;
         transition: 500ms;
         transition-delay: .8s;
     }
@@ -1004,8 +1052,12 @@ button {
     }
 
     .header__link {
-        margin-bottom: 4px;
+        margin-top: 24px;
         margin-left: 50px;
+    }
+    .header__lin {
+        margin-bottom: 4px;
+        margin-top: 100px;
     }
 
     .close {
@@ -1094,9 +1146,7 @@ button {
         display: none;
     }
 
-    .header__list {
-        display: none;
-    }
+   
 
 
     .advantages__cards {
