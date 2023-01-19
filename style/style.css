@@ -968,7 +968,7 @@ button {
 
 
 
-@media(min-width: 991.8px) {
+@media(max-width: 991.8px) {
     .header__nav-tel {
         display: none;
     }
