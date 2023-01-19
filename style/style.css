@@ -457,15 +457,27 @@ button {
 
 .swiper {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 109px;
+    height: 500px;
 }
 
-.swiper .carousel {
+.swiper .cantainer .mySlides{
     width: 100%;
-    min-height: 500px;
 }
-
-
+.mySlides img{
+    width: 100%;
+    height: 500px;
+    opacity: .5;
+}
+.mySlides {
+    position: relative;
+    
+}
+.myTxt1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 
