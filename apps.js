@@ -33,6 +33,10 @@ document.querySelector(".prev-slide").addEventListener("click", function() {
   restart();
 });
 
+
+
+
+
 /* ----------- */
 let navMenu = document.querySelector('.nav__menu');
 let headerList = document.querySelector('.header__list');
