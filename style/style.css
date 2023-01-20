@@ -1277,9 +1277,83 @@ button {
         text-align: center;
     }
 
-
+.myTxt1{
+    font-size: 30px
+}
 
 
 }
 
-/* @media (max-width: 576px) {}  */
+@media (max-width: 576px) {
+    .header__title{
+        font-size: 37px;
+        line-height: 39px;
+            font-size: 37px;
+    line-height: 39px;
+    font-size: 30px;
+    line-height: 50px;
+    }
+.header__content .container {
+    margin-top: 0;
+    text-align: center;
+}
+.advantages__title{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.advantages__card-texts h3{
+    font-size: 20px;
+}
+.advantages__card-texts p{
+    font-size: 16px;
+}
+.course{
+    margin-top: 60px;
+}
+.course_title h2{
+font-size: 40px;
+margin-bottom: 25px;
+
+}
+.course_content_box h2{
+    font-size: 23px;
+    line-height: 30px;
+    
+}
+.course_content_box p{
+    Font-size: 18px;
+    line-height: 23px;
+}
+.myTxt1{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.mySlides img{
+    height: 300px !important;
+    border-radius: 50px;
+}
+.swiper{
+    height: 300px;
+}
+.certificate h4{
+    font-size: 40px !important;
+    line-height: 40px !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+} 
