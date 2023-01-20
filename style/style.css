@@ -474,6 +474,7 @@ button {
     position: relative;
     
 }
+
 .myTxt1{
     position: absolute;
     top: 50%;
@@ -874,24 +875,27 @@ button {
 }
 
 /*=================================carsouel=====================================================*/
-.carousel_logos{
+
+
+.carousel_logoss{
     position: absolute;
-    top: -10px;
+    top: -0;
     left: 0;
     width: 123px !important;
     height: 111px !important;
-    overflow: hidden !important;
+    overflow: hidden ;
     opacity: .6;
 }
 .swiper_it{
     position: relative;
+    overflow: hidden;
 }
-.carousel_logos:nth-child(2){
+.carousel_logos{
     position: absolute;
-width: 244px !important;
-height: 218px !important;
-left: 500px !important;
-top: 150px !important;
+    width: 244px !important;
+    height: 218px !important;
+    right: -110px ;
+    bottom: 0;
 
 }
 .carousel {
