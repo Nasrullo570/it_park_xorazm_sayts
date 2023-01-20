@@ -474,6 +474,7 @@ button {
 .mySlides {
     position: relative;
     
+    
 }
 
 .myTxt1{
@@ -491,6 +492,7 @@ button {
     position: absolute;
     top: 20px;
     left: 70px;
+    
     
 }
 .myTxt1 p{
@@ -575,9 +577,9 @@ button {
     align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
-    max-width: 583px;
+    max-width: 583px; 
     width: 100%;
-    height: 303px;
+    height: 303px; 
 
 }
 
@@ -652,7 +654,8 @@ transform: rotate(15deg);
 
 .footer_content_text {
     max-width: 416px;
-
+    width: 100%;
+    z-index: 99;
 }
 
 .footer_content_text h4 {
@@ -661,14 +664,12 @@ transform: rotate(15deg);
     line-height: 53px;
     color: #1C1917;
     margin-bottom: 12px;
-
 }
 
 .footer_content_text p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-
     color: #8D8C8B;
 }
 
@@ -711,13 +712,41 @@ transform: rotate(15deg);
 .footer_content_text button:hover {
     background: #D4EC82;
 }
+.footer_content_img_log1{
+    position: absolute;
+    bottom: 0;
+    left:  360px;
+    width: 244px;
+    height: 218px;
+    z-index: 21;
+    opacity: .7;
+    width: 244px;
+height: 218px;
 
-.footer_content img {
+}
+.footer_content_img{
+    /* position: relative; */
+
+}
+.footer_content_img_log2{
+    position: absolute;
+    width: 300px !important;
+    height: 300px !important;
+    top: 0;
+    left:  0;
+    width: 100px;
+    height: 100px;
+    opacity: .7;
+
+}
+
+.footer_content_img_log  {
     position: absolute;
     max-width: 473px;
     width: 100%;
     top: 91px;
-    left: 0;
+    left: 90px;
+    z-index: 2;
 }
 
 .footer-icon {
@@ -742,6 +771,8 @@ transform: rotate(15deg);
 
 .apps {
     width: 70%;
+
+    text-align: center;
 }
 
 .socials a {
@@ -922,6 +953,7 @@ transform: rotate(15deg);
     overflow: hidden;
 }
 .carousel_logos{
+    opacity: .5;
     position: absolute;
     width: 244px !important;
     height: 218px !important;
@@ -1202,6 +1234,19 @@ transform: rotate(15deg);
         padding: 24px;
 
     }
+    .myTxt1 h3{
+        font-size: 30px;
+     }
+     .myTxt1 p{
+        font-size: 20px;
+        top: 100px;
+     }
+     .footer_content_img_log2{
+        display: none;
+     }
+    .footer_content_img_log1{
+        display: none;
+    }
 
 }
 
@@ -1324,6 +1369,7 @@ transform: rotate(15deg);
 }
 
 
+
 }
 
 @media (max-width: 576px) {
@@ -1367,17 +1413,32 @@ margin-bottom: 25px;
     Font-size: 18px;
     line-height: 23px;
 }
-.myTxt1{
-    font-size: 20px;
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%);
-}
+
 .mySlides img{
     height: 300px !important;
     border-radius: 50px;
 }
+.myTxt1{
+    /* height: 300px !important; */
+    border-radius: 50px;
+  
+
+}
+.myTxt1 h3{
+   font-size: 30px;
+    
+    
+}
+.myTxt1 p{
+   font-size: 20px;
+   top: 100px;
+}
+.myTxt1 p:nth-child(2){
+   font-size: 20px;
+   top: 220px;
+}
+
+
 .swiper{
     height: 300px;
 }
@@ -1394,7 +1455,6 @@ margin-bottom: 25px;
 .certificate_content_title p,a{
     font-size: 17px;
     line-height: 23px;
-    padding: 14px 32px; 
 
 }
 
