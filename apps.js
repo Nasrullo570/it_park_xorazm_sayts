@@ -131,9 +131,9 @@ function navHighlighter() {
     - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
     */
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
+      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add('active');
     } else {
-      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
+      document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove('active');
     }
   });
 }
