@@ -70,14 +70,15 @@ button {
     transition: .6s;
     display: block;
     width: max-content;
-    margin-left: 50px   !important;
+    margin-left: 50px !important;
 }
+
 .header__link {
     font-size: 20px;
     color: var(--link);
-    padding: 15px ;
+    padding: 15px;
     transition: .6s;
-    margin:0 4px;
+    margin: 0 4px;
     display: block;
     width: max-content;
 }
@@ -123,6 +124,7 @@ button {
     transform: translateY(15px);
     width: 20px;
 }
+
 .nav__menu .line:nth-of-type(3) {
     transform: translateY(-15px);
     width: 40px;
@@ -133,17 +135,17 @@ button {
     width: 40px;
     transition-delay: .25s;
 }
+
 .nav__menu.active .line:nth-of-type(3) {
     transform: translateY(0) rotate(225deg);
     transition-delay: .45s;
 }
+
 .nav__menu.active .line:nth-of-type(2) {
     transform: translateX(200%);
 }
 
-.nav
-
-.header__nav-tel i {
+.nav .header__nav-tel i {
     margin-right: 10px;
 }
 
@@ -152,7 +154,8 @@ button {
     justify-content: space-between;
     align-items: center;
 }
-.header__content .container{
+
+.header__content .container {
     margin-top: 100px;
 }
 
@@ -196,7 +199,7 @@ button {
 }
 
 .header__content-image {
-    width:100%; 
+    width: 100%;
 }
 
 .header__content_link:hover {
@@ -343,6 +346,7 @@ button {
     flex-direction: column;
     position: relative;
     margin-bottom: 30px;
+    margin-top: 100px;
     overflow: hidden;
 
 }
@@ -352,10 +356,27 @@ button {
     background-color: #F9F9FB;
 }
 
-.course_content img {
+.course_content_box a {
+    background: #FFFFFF;
+    padding: 24px 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #555351;
+    width: 242px;
+    border-radius: 100px;
+}
+
+.course_content_box img {
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.course_content_box img {
+    max-width: 250px;
+    width: 100%;
+    height: 250px;
 }
 
 .course_content_boxs1 img {
@@ -416,14 +437,14 @@ button {
     color: #8D8C8B;
 }
 
-.course_content h2 {
+.main-content h2 {
     font-weight: 600;
     font-size: 31px;
     line-height: 42px;
     color: #FFFFFF;
 }
 
-.course_content p {
+.main-content p {
     font-weight: 400;
     font-size: 20px;
     line-height: 27px;
@@ -435,7 +456,7 @@ button {
     width: 100%;
 }
 
-.course_content a {
+.main-content a {
     background: white;
     width: 242px;
     color: #555351;
@@ -452,6 +473,37 @@ button {
 
 }
 
+.course .navigation ul li h3 {
+    font-weight: 600;
+    font-size: 49px;
+    line-height: 67px;
+    display: flex;
+    align-items: flex-end;
+    color: #1C1917;
+    margin-bottom: 44px;
+
+}
+
+.side-bar {
+    max-width: 400px;
+    width: 100%;
+    /* width: 60%; */
+
+}
+
+.course ul li a {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 34px;
+    color: #555351;
+    padding: 15px;
+    display: block;
+    margin-bottom: 20px;
+    background: #F2F3F7;
+    border-radius: 100px;
+}
+
+
 
 /*-------------------------------------   swiper   ----------------------------------*/
 
@@ -461,23 +513,25 @@ button {
     height: 500px;
 }
 
-.swiper .cantainer .mySlides{
+.swiper .cantainer .mySlides {
     width: 100%;
 }
-.mySlides img{
+
+.mySlides img {
     width: 100%;
     height: 500px;
     border-radius: 100px;
     align-items: center;
     display: flex;
 }
+
 .mySlides {
     position: relative;
-    
-    
+
+
 }
 
-.myTxt1{
+.myTxt1 {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -485,22 +539,25 @@ button {
     background: rgba(0, 0, 0, 0.45);
     color: white;
     width: 100%;
-    height:100%;
+    height: 100%;
     border-radius: 100px;
 }
-.myTxt1 h3{
+
+.myTxt1 h3 {
     position: absolute;
     top: 20px;
     left: 70px;
-    
-    
+
+
 }
-.myTxt1 p{
+
+.myTxt1 p {
     position: absolute;
     top: 70px;
     left: 70px;
 }
-.myTxt1 p:nth-child(2){
+
+.myTxt1 p:nth-child(2) {
     position: absolute;
     top: 390px;
     left: 70px;
@@ -576,10 +633,10 @@ button {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-direction: column; 
-    max-width: 583px; 
+    flex-direction: column;
+    max-width: 583px;
     width: 100%;
-    height: 303px; 
+    height: 303px;
 
 }
 
@@ -594,16 +651,18 @@ button {
     height: 224px;
     position: relative;
 }
-.certificate_content_cardit{
+
+.certificate_content_cardit {
     position: absolute;
     width: 244px !important;
     height: 218px !important;
     opacity: .6;
     right: -44px;
     bottom: -127px;
-transform: rotate(15deg);
+    transform: rotate(15deg);
 
 }
+
 .certificate_content_card img {
     max-width: 478px;
     width: 100%;
@@ -712,10 +771,11 @@ transform: rotate(15deg);
 .footer_content_text button:hover {
     background: #D4EC82;
 }
-.footer_content_img_log1{
+
+.footer_content_img_log1 {
     position: absolute;
     bottom: 0;
-    left:  360px;
+    left: 360px;
     width: 244px;
     height: 218px;
     z-index: 21;
@@ -724,23 +784,24 @@ transform: rotate(15deg);
     height: 200px;
 
 }
-.footer_content_img{
+
+/* .footer_content_img{
     /* position: relative; */
 
-}
-.footer_content_img_log2{
+
+.footer_content_img_log2 {
     position: absolute;
     width: 300px !important;
     height: 300px !important;
     top: 0;
-    left:  0;
+    left: 0;
     width: 100px;
     height: 100px;
     opacity: .7;
 
 }
 
-.footer_content_img_log  {
+.footer_content_img_log {
     position: absolute;
     max-width: 473px;
     width: 100%;
@@ -939,28 +1000,31 @@ transform: rotate(15deg);
 /*=================================carsouel=====================================================*/
 
 
-.carousel_logoss{
+.carousel_logoss {
     position: absolute;
     top: -0;
     left: 0;
     width: 123px !important;
     height: 111px !important;
-    overflow: hidden ;
+    overflow: hidden;
     opacity: .6;
 }
-.swiper_it{
+
+.swiper_it {
     position: relative;
     overflow: hidden;
 }
-.carousel_logos{
+
+.carousel_logos {
     opacity: .5;
     position: absolute;
     width: 244px !important;
     height: 218px !important;
-    right: -110px ;
+    right: -110px;
     bottom: 0;
 
 }
+
 .carousel {
     width: 100%;
     height: 338px;
@@ -1117,6 +1181,7 @@ transform: rotate(15deg);
     .header__nav-tel {
         display: none;
     }
+
     .header__list {
         display: block;
         position: fixed;
@@ -1151,6 +1216,7 @@ transform: rotate(15deg);
         margin-top: 24px;
         margin-left: 50px;
     }
+
     .header__lin {
         margin-bottom: 4px;
         margin-top: 100px;
@@ -1189,6 +1255,18 @@ transform: rotate(15deg);
         border-radius: 60px;
     }
 
+    .side-bar {
+        margin-bottom: 200px;
+    }
+
+    .side-bar ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        display: inline;
+    }
+
     .course .container {
         flex-wrap: wrap;
         align-items: center;
@@ -1213,9 +1291,8 @@ transform: rotate(15deg);
 
     }
 
-    .apps {
+    /* .apps {
         /* flex-wrap: wrap; */
-    }
 
     .course_title {
         flex-direction: row;
@@ -1234,20 +1311,30 @@ transform: rotate(15deg);
         padding: 24px;
 
     }
-    .myTxt1 h3{
+
+    .myTxt1 h3 {
         font-size: 30px;
-     }
-     .myTxt1 p{
+    }
+
+    .myTxt1 p {
         font-size: 20px;
         top: 100px;
-     }
-     .footer_content_img_log2{
-        display: none;
-     }
-    .footer_content_img_log1{
+    }
+
+    .footer_content_img_log2 {
         display: none;
     }
 
+    .footer_content_img_log1 {
+        display: none;
+    }
+
+    .course_content_box img {
+        max-width: 200px;
+        width: 100%;
+        height: 200px;
+
+    }
 }
 
 @media (max-width: 768px) {
@@ -1255,7 +1342,7 @@ transform: rotate(15deg);
         display: none;
     }
 
-   
+
 
 
     .advantages__cards {
@@ -1265,11 +1352,7 @@ transform: rotate(15deg);
         gap: 10px;
     }
 
-    .course_content_box img {
-        max-width: 300px;
-        width: 100%;
 
-    }
 
     .course_content_box a {
         margin-top: 40px;
@@ -1292,22 +1375,25 @@ transform: rotate(15deg);
 
     }
 
-    
+
     .certificate_content_card img {
         width: 100%;
         height: 201px;
     }
-    .certificate_content_card_foto{
+
+    .certificate_content_card_foto {
         position: relative;
     }
-    .certificate_content_cardit{
+
+    .certificate_content_cardit {
         display: none;
     }
-    .certificate_content_card_logo{
+
+    .certificate_content_card_logo {
         position: absolute;
         top: 0;
     }
-    
+
     .certificate_content_title {
         align-items: center;
         justify-content: center;
@@ -1364,128 +1450,155 @@ transform: rotate(15deg);
         text-align: center;
     }
 
-.myTxt1{
-    font-size: 30px
-}
+    .myTxt1 {
+        font-size: 30px
+    }
 
 
 
 }
 
 @media (max-width: 576px) {
-    .header__title{
+    .header__title {
         font-size: 37px;
         line-height: 39px;
-            font-size: 37px;
-    line-height: 39px;
-    font-size: 30px;
-    line-height: 50px;
+        font-size: 37px;
+        line-height: 39px;
+        font-size: 30px;
+        line-height: 50px;
     }
-.header__content .container {
-    margin-top: 0;
-    text-align: center;
+
+    .header__content .container {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .advantages__title {
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .advantages__card-texts h3 {
+        font-size: 20px;
+    }
+
+    .advantages__card-texts p {
+        font-size: 16px;
+    }
+
+    .course {
+        margin-top: 60px;
+    }
+
+    .course_title h2 {
+        font-size: 40px;
+        margin-bottom: 25px;
+
+    }
+
+    .course_content_box h2 {
+        font-size: 23px;
+        line-height: 30px;
+
+    }
+
+    .course_content_box p {
+        Font-size: 18px;
+        line-height: 23px;
+    }
+
+    .course_content_box {
+        margin-top: 100px;
+
+
+    }
+
+    .mySlides img {
+        height: 300px !important;
+        border-radius: 50px;
+    }
+
+    .myTxt1 {
+        /* height: 300px !important; */
+        border-radius: 50px;
+
+
+    }
+
+    .myTxt1 h3 {
+        font-size: 30px;
+
+
+    }
+
+    .myTxt1 p {
+        font-size: 20px;
+        top: 100px;
+    }
+
+    .myTxt1 p:nth-child(2) {
+        font-size: 20px;
+        top: 220px;
+    }
+
+
+    .swiper {
+        height: 300px;
+    }
+
+    .certificate h4 {
+        font-size: 40px !important;
+        line-height: 40px !important;
+
+    }
+
+    .certificate_content_title h3 {
+        font-size: 24px;
+        line-height: 29px;
+
+    }
+
+    .certificate_content_title p,
+    a {
+        font-size: 17px;
+        line-height: 23px;
+
+    }
+
+
 }
-.advantages__title{
-    font-size: 40px;
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
-.advantages__card-texts h3{
-    font-size: 20px;
-}
-.advantages__card-texts p{
-    font-size: 16px;
-}
-.course{
-    margin-top: 60px;
-}
-.course_title h2{
-font-size: 40px;
-margin-bottom: 25px;
 
-}
-.course_content_box h2{
-    font-size: 23px;
-    line-height: 30px;
-    
-}
-.course_content_box p{
-    Font-size: 18px;
-    line-height: 23px;
+.side-bar {
+    position: relative;
 }
 
-.mySlides img{
-    height: 300px !important;
-    border-radius: 50px;
-}
-.myTxt1{
-    /* height: 300px !important; */
-    border-radius: 50px;
-  
-
-}
-.myTxt1 h3{
-   font-size: 30px;
-    
-    
-}
-.myTxt1 p{
-   font-size: 20px;
-   top: 100px;
-}
-.myTxt1 p:nth-child(2){
-   font-size: 20px;
-   top: 220px;
+.navigation {
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-
-.swiper{
-    height: 300px;
-}
-.certificate h4{
-    font-size: 40px !important;
-    line-height: 40px !important;
-
-}
-.certificate_content_title h3{
-    font-size: 24px;
-    line-height: 29px;
-
-}
-.certificate_content_title p,a{
-    font-size: 17px;
-    line-height: 23px;
-
+.navigation ul li a {
+    display: block;
 }
 
+.navigation ul li a.active {
+    color: #FFFFFF;
+    background: #1C1917;
+    border-radius: 100px;
+}
 
+.main-content section {
+    height: 500px;
+}
 
+.main-content {
+    height: 700px;
+    overflow-y: auto;
+    width: 70%;
+}
 
-
-
-
-
-
-
-
-
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
+.main-content::-webkit-scrollbar {
+    height: 0;
+}
