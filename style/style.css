@@ -467,20 +467,43 @@ button {
 .mySlides img{
     width: 100%;
     height: 500px;
-    opacity: .5;
     border-radius: 100px;
+    align-items: center;
+    display: flex;
 }
 .mySlides {
     position: relative;
+    
     
 }
 
 .myTxt1{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
+    top: 0%;
+    left: 0%;
     font-size: 40px;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    width: 100%;
+    height:100%;
+    border-radius: 100px;
+}
+.myTxt1 h3{
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    
+    
+}
+.myTxt1 p{
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+.myTxt1 p:nth-child(2){
+    position: absolute;
+    top: 390px;
+    left: 70px;
 }
 
 
@@ -553,10 +576,10 @@ button {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    flex-direction: column;
-    max-width: 583px;
+    flex-direction: column; 
+    max-width: 583px; 
     width: 100%;
-    height: 303px;
+    height: 303px; 
 
 }
 
@@ -569,8 +592,18 @@ button {
 .certificate_content_card {
     border-radius: 100px;
     height: 224px;
+    position: relative;
 }
+.certificate_content_cardit{
+    position: absolute;
+    width: 244px !important;
+    height: 218px !important;
+    opacity: .6;
+    right: -44px;
+    bottom: -127px;
+transform: rotate(15deg);
 
+}
 .certificate_content_card img {
     max-width: 478px;
     width: 100%;
@@ -621,7 +654,8 @@ button {
 
 .footer_content_text {
     max-width: 416px;
-
+    width: 100%;
+    z-index: 99;
 }
 
 .footer_content_text h4 {
@@ -630,14 +664,12 @@ button {
     line-height: 53px;
     color: #1C1917;
     margin-bottom: 12px;
-
 }
 
 .footer_content_text p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-
     color: #8D8C8B;
 }
 
@@ -680,13 +712,41 @@ button {
 .footer_content_text button:hover {
     background: #D4EC82;
 }
+.footer_content_img_log1{
+    position: absolute;
+    bottom: 0;
+    left:  360px;
+    width: 244px;
+    height: 218px;
+    z-index: 21;
+    opacity: .7;
+    width: 244px;
+height: 218px;
 
-.footer_content img {
+}
+.footer_content_img{
+    /* position: relative; */
+
+}
+.footer_content_img_log2{
+    position: absolute;
+    width: 300px !important;
+    height: 300px !important;
+    top: 0;
+    left:  0;
+    width: 100px;
+    height: 100px;
+    opacity: .7;
+
+}
+
+.footer_content_img_log  {
     position: absolute;
     max-width: 473px;
     width: 100%;
     top: 91px;
-    left: 0;
+    left: 90px;
+    z-index: 2;
 }
 
 .footer-icon {
@@ -711,6 +771,8 @@ button {
 
 .apps {
     width: 70%;
+
+    text-align: center;
 }
 
 .socials a {
@@ -891,6 +953,7 @@ button {
     overflow: hidden;
 }
 .carousel_logos{
+    opacity: .5;
     position: absolute;
     width: 244px !important;
     height: 218px !important;
@@ -1171,6 +1234,19 @@ button {
         padding: 24px;
 
     }
+    .myTxt1 h3{
+        font-size: 30px;
+     }
+     .myTxt1 p{
+        font-size: 20px;
+        top: 100px;
+     }
+     .footer_content_img_log2{
+        display: none;
+     }
+    .footer_content_img_log1{
+        display: none;
+    }
 
 }
 
@@ -1216,11 +1292,22 @@ button {
 
     }
 
+    
     .certificate_content_card img {
         width: 100%;
         height: 201px;
     }
-
+    .certificate_content_card_foto{
+        position: relative;
+    }
+    .certificate_content_cardit{
+        display: none;
+    }
+    .certificate_content_card_logo{
+        position: absolute;
+        top: 0;
+    }
+    
     .certificate_content_title {
         align-items: center;
         justify-content: center;
@@ -1282,6 +1369,7 @@ button {
 }
 
 
+
 }
 
 @media (max-width: 576px) {
@@ -1325,23 +1413,48 @@ margin-bottom: 25px;
     Font-size: 18px;
     line-height: 23px;
 }
-.myTxt1{
-    font-size: 20px;
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%);
-}
+
 .mySlides img{
     height: 300px !important;
     border-radius: 50px;
 }
+.myTxt1{
+    /* height: 300px !important; */
+    border-radius: 50px;
+  
+
+}
+.myTxt1 h3{
+   font-size: 30px;
+    
+    
+}
+.myTxt1 p{
+   font-size: 20px;
+   top: 100px;
+}
+.myTxt1 p:nth-child(2){
+   font-size: 20px;
+   top: 220px;
+}
+
+
 .swiper{
     height: 300px;
 }
 .certificate h4{
     font-size: 40px !important;
     line-height: 40px !important;
+
+}
+.certificate_content_title h3{
+    font-size: 24px;
+    line-height: 29px;
+
+}
+.certificate_content_title p,a{
+    font-size: 17px;
+    line-height: 23px;
 
 }
 
