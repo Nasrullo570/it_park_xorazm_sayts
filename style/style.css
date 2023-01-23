@@ -1346,14 +1346,36 @@ margin-bottom: 25px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
 } 
+
+.side-bar {
+    position: relative;
+}
+
+.navigation {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.navigation ul li a {
+    display: block;
+}
+
+.navigation ul li a.active {
+    color: red;
+}
+
+.main-content section {
+    height: 500px;
+}
+
+.main-content {
+    height: 700px;
+    overflow-y: auto;
+    width: 70%;
+}
+
+.main-content::-webkit-scrollbar {
+    height: 0;
+}
