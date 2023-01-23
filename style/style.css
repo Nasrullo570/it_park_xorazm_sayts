@@ -12,7 +12,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -472,6 +474,25 @@ button {
     margin-left: 10px;
 
 }
+.sidebar_icon{
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 27px !important;
+    background: #F9F9FB !important;
+border-radius: 100px !important;
+padding: 15px;
+margin-top: 20px;
+display: block;
+    
+    color: #8D8C8B !important;
+    
+}
+.sidebar_icon:hover{
+    color: #f9f9f9 !important;
+    background: #1C1917 !important;
+}
+#sviper{
+}
 
 .course .navigation ul li h3 {
     font-weight: 600;
@@ -490,7 +511,9 @@ button {
     /* width: 60%; */
 
 }
-
+.fa-sharp{
+    margin-left: 4px;
+}
 .course ul li a {
     font-weight: 400;
     font-size: 25px;
@@ -501,6 +524,10 @@ button {
     margin-bottom: 20px;
     background: #F2F3F7;
     border-radius: 100px;
+}
+.course ul li a :nth-last-child{
+    width: 100px;
+    padding: 111px;
 }
 
 
@@ -1258,13 +1285,12 @@ button {
     .side-bar {
         margin-bottom: 200px;
     }
+   
 
     .side-bar ul li {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-wrap: wrap;
-        display: inline;
     }
 
     .course .container {
@@ -1584,6 +1610,11 @@ button {
 }
 
 .navigation ul li a.active {
+    color: #FFFFFF;
+    background: #1C1917;
+    border-radius: 100px;
+}
+.navigation ul li a:hover {
     color: #FFFFFF;
     background: #1C1917;
     border-radius: 100px;
