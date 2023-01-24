@@ -412,6 +412,9 @@ button {
     justify-content: space-between;
     flex-direction: column;
 }
+.course .navigation ul h3{
+    margin-bottom: 0 !important;
+}
 
 .navigation h2 {
     font-weight: 600;
@@ -497,7 +500,7 @@ button {
 
 #sviper {}
 
-.course .navigation ul li h3 {
+.course .navigation ul  h3 {
     font-weight: 600;
     font-size: 49px;
     line-height: 67px;
