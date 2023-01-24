@@ -107,7 +107,6 @@ const sections = document.querySelectorAll("section[id]");
 
 const mainContent = document.querySelector('.main-content')
 
-console.log(mainContent)
 
 // Add an event listener listening for scroll
 mainContent.addEventListener("scroll", navHighlighter);
@@ -118,7 +117,6 @@ function navHighlighter() {
   
   // Get current scroll position
   let scrollY = mainContent.scrollTop;
-  console.log(scrollY)
   
   // Now we loop through sections to get height, top and ID values for each
   sections.forEach(current => {

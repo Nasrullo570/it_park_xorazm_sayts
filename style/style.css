@@ -1309,9 +1309,18 @@ button {
         align-items: center;
         justify-content: center;
     }
-    .navigation{
+    .main-content{
+        margin-top: 140px;
+    }
+
+    .sidebar_icon{
         display: none;
     }
+    .navigation ul{
+        /* display: none; */
+        margin-bottom: 100px !important;
+    }
+   
     .sidebar-mini{
         display: block;
     }
